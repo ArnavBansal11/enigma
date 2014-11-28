@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <META name="viewport" content="initial-scale=1">
+        <TITLE>
+            Enigma | The Quiz Society of DPS Noida
+        </TITLE>
+        <LINK rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <!-- Embedding Google Fonts -->
+        <LINK href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <LINK href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+        <!-- Embedding stylesheets -->
+        <LINK rel="stylesheet" href="stylesheets/style.css" />
+        <!-- Embedding scripts -->
+        <SCRIPT src="scripts/jquery-2.1.0.min.js"></SCRIPT>
+    </HEAD>
+    <BODY>
+        
+        <DIV class="nav" id="bar">
+                <IMG src="images/banner.png" align="left" class="menu link" href="index.html" />
+                <A class="link" href="about.html">About</A>
+                <A class="link" href="team.html">The Team</A>
+                <A class="link" href="qotd.html">QOTD</A>
+                <A class="link" href="join.html" id="join-button">Join Us</A>
+            </DIV>
+        <DIV class="container">
+            <DIV class="row section wow fadeInUp" id="about">
+                <DIV class="column full title wow fadeInDown">
+                    About Us
+                </DIV>
+                <DIV class="column two-thirds wow fadeInUp">
+                    <P>
+                        We are Enigma, the coveted Quiz Society of Delhi Public School, Noida.
+                        <BR /><BR />
+                        We started out nearly a decade ago, and today, we are one of the most elite quiz clubs in Delhi-NCR with almost all titles under out belt, which include the Columban Open Quiz (three times), which is considered by many as the biggest quiz in North India.
+                        <BR /><BR />
+                        Recently, we have undergone a major overhaul, renaming ourselves from Qriosity to Enigma. The redesign also included a new logo, new badges, sweatshirts, etc. Last week, we hosted Encrypt, our very own intra-school quiz, which saw the participation of a whopping 110 teams, which is far greater than most inter-school events.
+                        <BR /><BR />
+                        We are always open to welcome bright and young minds into the grand legacy of the club. Newcomers can <A class="link" href="join.html">join us</A> here.
+                    </P>
+                </DIV>
+                <DIV class="column one-third wow fadeInUp">
+                    <CENTER>
+                        <IMG src="images/logo.png" id="team" />
+                    </CENTER>
+                </DIV>
+            </DIV>
+
+            
+        </DIV>
+        <!--
+        <DIV class="wow fadeIn foot">
+            <BR />
+            Made with &hearts; in Noida
+            <BR />
+        </DIV>
+        -->
+        <SCRIPT>
+            // smooth scroll
+            var navbarHeight = $('.nav').height(); // assuming height remains constant
+            $('.link').click(function() {
+                var link = $(this);
+                $('html, body').animate({ scrollTop: $(link.attr('href')).offset().top - navbarHeight});
+                return false;
+            });
+        </SCRIPT>
+    </BODY>
+</HTML>

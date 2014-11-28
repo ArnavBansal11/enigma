@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <META name="viewport" content="initial-scale=1">
+        <TITLE>
+            Enigma | The Quiz Society of DPS Noida
+        </TITLE>
+        <LINK rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <!-- Embedding Google Fonts -->
+        <LINK href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <LINK href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+        <!-- Embedding stylesheets -->
+        <LINK rel="stylesheet" href="stylesheets/style.css" />
+        <!-- Embedding scripts -->
+        <SCRIPT src="scripts/jquery-2.1.0.min.js"></SCRIPT>
+    </HEAD>
+    <BODY>
+        
+        <DIV class="nav" id="bar">
+                <IMG src="images/banner.png" align="left" class="menu link" href="#hero" />
+                <A class="link" href="about.html">About</A>
+                <A class="link" href="team.html">The Team</A>
+                <A class="link" href="qotd.html">QOTD</A>
+                <A class="link" href="join.html" id="join-button">Join Us</A>
+            </DIV>
+        <DIV class="container">
+            <DIV class="row wow section fadeInUp" id="squad">
+                <DIV class="column full title wow fadeInDown">
+                    The Team
+                </DIV>
+                <DIV class="column one-third squad" style="margin-left:0;">
+                    
+                    <IMG class="eb" src="https://graph.facebook.com/hgoyal.dps/picture?width=158&height=158" />
+                    <BR />
+                    <A href="http://fb.me/hgoyal.dps" class="names" target="_blank">Harsh Goyal</A>
+                    <BR />
+                    <SPAN class="post">
+                        President
+                    </SPAN>
+                </DIV>
+                <DIV class="column one-third squad">
+                    
+                    <IMG class="eb" src="https://graph.facebook.com/kabirlovesyou/picture?width=158&height=158" />
+                    <BR />
+                    <A href="http://fb.me/kabirlovesyou" class="names" target="_blank">Kabir Singh Waraich</A>
+                    <BR />
+                    <SPAN class="post">
+                        Vice-President
+                    </SPAN>
+                </DIV>
+                <DIV class="column one-third squad">
+                    
+                    <IMG class="eb" src="https://graph.facebook.com/neeraj.meghani/picture?width=158&height=158" />
+                    <BR />
+                    <A href="http://fb.me/neeraj.meghani" class="names" target="_blank">Neeraj Meghani</A>
+                    <BR />
+                    <SPAN class="post">
+                        Secretary
+                    </SPAN>
+                </DIV>
+                <SPAN class="list">
+                [+] 
+                <A class="link" target="_blank" href="https://drive.google.com/file/d/0ByM24KJ3csEuV2JpYWNJUDlfanhMUlVVajd0M2Z5QmNSTHpv/view">
+                Click here
+                </A>
+                for the full list of current members.
+                </SPAN>
+            </DIV>
+        </DIV>
+        <!--
+        <DIV class="wow fadeIn foot">
+            <BR />
+            Made with &hearts; in Noida
+            <BR />
+        </DIV>
+        -->
+        <SCRIPT>
+            // smooth scroll
+            var navbarHeight = $('.nav').height(); // assuming height remains constant
+            $('.link').click(function() {
+                var link = $(this);
+                $('html, body').animate({ scrollTop: $(link.attr('href')).offset().top - navbarHeight});
+                return false;
+            });
+        </SCRIPT>
+    </BODY>
+</HTML>

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <META name="viewport" content="initial-scale=1">
+        <TITLE>
+            Enigma | The Quiz Society of DPS Noida
+        </TITLE>
+        <LINK rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <!-- Embedding Google Fonts -->
+        <LINK href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <LINK href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+        <!-- Embedding stylesheets -->
+        <LINK rel="stylesheet" href="stylesheets/style.css" />
+        <!-- Embedding scripts -->
+        <SCRIPT src="scripts/jquery-2.1.0.min.js"></SCRIPT>
+    </HEAD>
+    <BODY>
+        
+        <DIV class="nav" id="bar">
+                <IMG src="images/banner.png" align="left" class="menu link" href="#hero" />
+                <A class="link" href="about.html">About</A>
+                <A class="link" href="team.html">The Team</A>
+                <A class="link" href="qotd.html">QOTD</A>
+                <A class="link" href="join.html" id="join-button">Join Us</A>
+            </DIV>
+        <DIV class="container">
+            <DIV class="row wow section fadeInUp" id="join">
+                <DIV class="column full title wow fadeInDown">
+                    Join Us
+                </DIV>
+                <DIV class="column full form" style="margin-left:0;">
+                    <P>
+                        Please fill up the form below to enter Enigma.
+                    </P>
+                    <FORM action="javascript:formParse()">
+                        <INPUT type="text" name="name" required placeholder="Full Name" />
+                        <INPUT type="email" name="email" required placeholder="E-Mail Address" />
+                        <INPUT type="number" min="1" name="amount" required placeholder="The Answer"/>
+                        <!-- Protip: Deep thought is required. -->
+                        <BUTTON id="join-button">
+                            Submit
+                        </BUTTON>
+                    </FORM>
+                </DIV>
+            </DIV>
+
+        </DIV>
+        <!--
+        <DIV class="wow fadeIn foot">
+            <BR />
+            Made with &hearts; in Noida
+            <BR />
+        </DIV>
+        -->
+        <SCRIPT>
+            // smooth scroll
+            var navbarHeight = $('.nav').height(); // assuming height remains constant
+            $('.link').click(function() {
+                var link = $(this);
+                $('html, body').animate({ scrollTop: $(link.attr('href')).offset().top - navbarHeight});
+                return false;
+            });
+
+            function formParse() {
+                if ($('input[type="number"]').val() == '42') {
+                    alert("Correct!\nCongratulations, young enigmatic member.\nYou shall be contacted through you email for further details.");
+                }
+                else {
+                    alert("Thankyou for your attempt.\nWe will get back to you for further details.");
+                }
+            }
+
+        </SCRIPT>
+    </BODY>
+</HTML>

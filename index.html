@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <META name="viewport" content="initial-scale=1">
+        <TITLE>
+            Enigma | The Quiz Society of DPS Noida
+        </TITLE>
+        <LINK rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <!-- Embedding Google Fonts -->
+        <LINK href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <LINK href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+        <!-- Embedding stylesheets -->
+        <LINK rel="stylesheet" href="stylesheets/style.css" />
+        <!-- Embedding scripts -->
+        <SCRIPT src="scripts/jquery-2.1.0.min.js"></SCRIPT>
+    </HEAD>
+    <BODY>
+        
+        <DIV class="nav" id="bar">
+                <IMG src="images/banner.png" align="left" class="menu link" href="#hero" />
+                <A class="link" href="about.html">About</A>
+                <A class="link" href="team.html">The Team</A>
+                <A class="link" href="qotd.html">QOTD</A>
+                <A class="link" href="join.html" id="join-button">Join Us</A>
+            </DIV>
+        <DIV class="container">
+            <DIV class="row section wow fadeInUp" id="hero">
+                <DIV class="column full">
+                    <CENTER>
+                        <IMG src="images/logo.png" class="wow fadeInDown banner"/>
+                    </CENTER>
+                    <BR />
+                    <DIV class="column full heading wow fadeInDown">
+                        Enigma
+                    </DIV>
+                    <DIV class="column full subheading wow fadeInDown">
+                        The Quiz Society of DPS Noida
+                    </DIV>
+                </DIV>
+            </DIV>
+        </DIV>
+        <SCRIPT>
+            // smooth scroll
+            var navbarHeight = $('.nav').height(); // assuming height remains constant
+            $('.link').click(function() {
+                var link = $(this);
+                $('html, body').animate({ scrollTop: $(link.attr('href')).offset().top - navbarHeight});
+                return false;
+            });
+        </SCRIPT>
+    </BODY>
+</HTML>

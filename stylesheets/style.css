@@ -1,0 +1,401 @@
+@viewport{
+	zoom: 1.0;
+	width: extend-to-zoom;
+}
+@-ms-viewport{
+	width: extend-to-zoom;
+	zoom: 1.0;
+}
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.container {
+	margin: 0 auto;
+	width: 100%;
+}
+.column {
+	float: left;
+	margin-left: 5%;
+} 
+.column:first-child {
+	margin-left: 0;
+}
+.column.full {
+	width: 100%;
+}
+
+.column.two-thirds {
+	width: 65%;
+}
+
+.column.half {
+	width: 47.5%;
+}
+
+.column.one-third {
+	width: 30%;
+}
+
+.column.one-fourth {
+	width: 21.25%;
+}
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+.row {
+	overflow: hidden;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+::selection {
+	background: rgba(52, 152, 219, 0.76);
+	color: #ecf0f1;
+}
+::-webkit-scrollbar{
+	width: 0.3em;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #2ecc71; 
+}
+::-webkit-scrollbar-track{
+	background-color: #ecf0f1;
+}
+* {
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+body {
+	background-color: #ecf0f1;
+	max-width: 100%;
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+}
+.banner {
+	height: 10em;
+	margin-top: 15%;
+}
+.right {
+	text-align: right;
+}
+.left {
+	text-align: left;
+}
+.nav {
+	position: fixed;
+	background: #FFFFFF;
+	top: 0px;
+	width: 100%;	
+	font-size: 1.25em;
+	z-index: 5;
+	border-bottom: solid 1px #E4E6E7;
+	font-weight: 100;
+	font-family: 'Roboto', sans-serif;
+	color: #3498db;
+	text-align: right;
+	padding-right: 10%;
+}
+.menu {
+	height: 1em;
+	width: auto;
+	margin: 1em;
+	margin-left: 10%;
+	cursor: pointer;
+}
+.nav a {
+	text-decoration: none;
+	display: inline-block;
+	color: #2e332e;
+	margin-left: 0.75em;
+	width: 5em;
+	padding: 1em 0;
+	font-size: 0.9em;
+	text-align: center;
+	border-bottom: solid 2px #FFFFFF;
+}
+.nav a:hover {
+	border-bottom: solid 2px #3498db;
+	color: #3498db;
+}
+#join-button {
+	background-color: #2ecc71;
+	border-bottom: none;
+	color: #FFFFFF;
+	padding: 0.5em;
+	border-radius: 0.25em;
+}
+#join-button:hover {
+	color: #FFFFFF;
+	border-bottom: none;
+	background-color: #27ae60;
+}
+.section {
+	color: #3498db;
+	padding: 3em;
+	margin-top: 5%;
+}
+#hero {
+	min-height: 100%;
+	margin-top: 0;
+}
+.title {
+	font-size: 4em;
+	text-align: center;
+	color: #233a54;
+	margin-bottom: 1em;
+	margin-left: 0;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 300;
+}
+.heading {
+	font-size: 5em;
+	text-align: center;
+	color: #233a54;
+	margin-left: 0;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 300;
+}
+.subheading {
+	font-size: 1.5em;
+	text-align: center;
+	color: #2e332e;
+	margin-bottom: 1em;
+	margin-left: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+.section p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.25em;
+	font-weight: 300;
+	padding-right: 10%;
+	color: #2e332e;
+	display: inline-block; 
+}
+#about a {
+	text-decoration: none;
+	color: #2e332e;
+	border-bottom: dotted 1px #27ae60;
+}
+#about a:hover {
+	border-bottom-color: transparent;
+	color: #27ae60;
+}
+.list a {
+	text-decoration: none;
+	color: #2e332e;
+	border-bottom: dotted 1px #27ae60;
+}
+.list a:hover {
+	border-bottom-color: transparent;
+	color: #27ae60;
+}
+.list {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	margin-top: 2em;
+	display: inline-block;
+	font-weight: 100;
+
+}
+ul {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.25em;
+	max-width: 100%;
+	font-weight: 300;
+	color: #2e332e;
+	display: inline-block;
+	list-style-type: circle;
+}
+/*
+#about, #als {
+	background-color: #FFFFFF;
+}
+*/
+#about .one-third {
+	margin-left: 0;
+}
+#team {
+	height: auto;
+	width: 80%;
+	margin-left: 15%;
+}
+b {
+	font-weight: 400;
+}
+.margin_top {
+	margin-top: 2em;
+}
+#squad {
+	text-align: center;
+	width: 90%;
+	padding-left: 10%;
+}
+
+.eb {
+	display: block;
+	border-radius: 100%;
+	height: 4em;
+	width: auto;
+	margin: 0 auto;
+	position: relative;
+	border: solid 5px #ecf0f1;
+}
+.names {
+	color: #3498db;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-decoration: none;
+
+}
+.names:hover{
+	color: #233a54;
+}
+.post {
+	color: #233a54;
+	font-size: 0.65em;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+
+}
+.squad {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.25em;
+	border-radius: 0.25em;
+	display: inline-block;
+	border: solid 1px rgba(52, 152, 219, 0.36);
+	padding: 2em 0;
+	height: 12em;
+	font-weight: 300;
+	background-color: #FFFFFF;
+	margin-top: 5%;
+}
+no {
+	float: right;
+	text-align: left;
+}
+.symbol a {
+	text-decoration: none;
+	color: #233a54;
+
+}
+.form {
+	padding: 0 10%;
+}
+input {
+	color: #2e332e;
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	padding: 0.5em;
+	border: solid 1px #E4E6E7;
+	margin: 0.75em 0;
+	font-size: 1em;
+	border-radius: 0.25em;
+	width: 30em;
+	outline: none;
+}
+input:focus {
+	outline: none;
+	border-color: #27ae60;
+}
+button {
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	padding: 0.75em;
+	border: solid 1px #E4E6E7;
+	margin: 1em 0;
+	font-size: 1em;
+	border-radius: 0.25em;
+	width: 7em;
+	outline: none;
+}
+.foot {
+	background-color: #233a54;
+	color: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	font-weight: 300;
+	text-align: center;
+	font-size: 1em;
+	height: 5em;
+}
+@media screen and (orientation:portrait) {
+	.column.full,
+	.column.two-thirds,
+	.column.half,
+	.column.one-third,
+	.column.one-fourth,
+	.nav a {
+		margin-left: 0;
+		width: 100%;
+	}
+	.left, .right {
+		text-align: center;
+	}
+	.banner {
+		margin-top: 30%;
+	}
+	.menu {
+		opacity: 1;
+		display: inline-block;
+	}
+	.nav a {
+		opacity: 0;
+		display: none;
+	}
+	.nav {
+		max-height: 3.5em;
+	}
+	.nav a:hover {
+		background-color:  #3498db;
+		color: #FFFFFF;
+	}
+	#team {
+		margin-left: 0;
+		margin-top: 1em;
+	}
+	.schedule {
+		display: none;
+	}
+	.sched {
+		display: inline-block;
+	}
+	.squad {
+		margin-top: 1em;
+		margin-left: 1em;
+	}
+	#squad {
+		padding-right: 0;
+
+	}
+	.column.half.symbol {
+		width: 47.5%;
+	}
+	input {
+		width: 15em;
+	}
+}
+@media screen and (orientation:landscape) {
+	.nav a {
+		opacity: 1;
+		display: inline-block;
+	}
+}
